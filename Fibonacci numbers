@@ -1,0 +1,31 @@
+#print Fibonacci numbers in both postive & negative integers
+
+print("FIBONACCI SERIES")
+p = int(input("Enter the limit of the Series : "))
+a = 0
+b = 1
+if p <= 0:
+    a,b = 0, -1
+    count = 0
+    print("fibonacci series in negative integers:")
+    while count > p:
+        print(a)
+        sum = a+b
+        a = b
+        b = sum
+        count -= 1
+    
+elif p == 1:
+    print("Fibonacci Series upto ",p)
+    
+else:
+    count = 0
+    print("Fibonacci Series in postive integers : ")
+    while count < p:
+        print(a)
+        sum = a+b
+        a = b
+        b = sum
+        count += 1
+
+
